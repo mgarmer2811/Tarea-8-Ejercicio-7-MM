@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <h1>Formulario de registro - Laguna Tollon</h1>
+    <form action="" method="get">
+        <p><b>Nombre</b></p>
+        <input type="text" name="Name" placeholder="Nombre" maxlength="50" required>
+        <p><b>Apellidos</b></p>
+        <input type="text" name="Surname/s" placeholder="Apellidos" maxlength="50" required>
+        <p><b>Sexo</b></p>
+        <select required>
+            <optgroup label="Seleccione opcion">
+                <option selected disabled></option>
+                <option>Hombre</option>
+                <option>Mujer</option>
+            </optgroup>
+        </select>
+        <p><b>E-mail</b></p>
+        <input type="email" name="mail" placeholder="E-mail" required>
+        <p>Deseo recibir información sobre novedades y ofertas</p>
+        <input type="checkbox" name="News&Offers" checked>
+        <p>Declaro haber leido y aceptado las condiciones generales del programa y la normativa sobre protección de datos</p>
+        <input type="checkbox" name="Terms&Service" required>
+        <!--
+            Tambien podria haber hecho lo siguiente y en vez de la checkbox cuadrada, hubiera sido una checkbox redondeada
+
+            <input type="radio">
+        -->
+        <br><br>
+        <hr>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
